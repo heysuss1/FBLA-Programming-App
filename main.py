@@ -14,8 +14,8 @@ class User:
         self.job = job
 
 """
-Params: Text to be displayed by user
 Output
+Params: Text to be displayed by user
 """
 def stagger_text(text: str):
     for i in text:
@@ -30,6 +30,11 @@ company_job = {"McDonalds": "cashier", "Publix" : "stocker", "IBM": "data entry 
 def show_menu():
     pass
 
+
+def get_input(input_var, message):
+    input_var = input(message)
+    return input_var
+    
 print("Welcome, aspiring entrepreneur")
 
 time.sleep(1)
@@ -55,5 +60,8 @@ time.sleep(1.5)
 print("As a result, you decide to quit and start your own business")
 time.sleep(2)
 
-clear(  )
-product_type = input("")
+clear()
+product_type = 1
+product_type = get_input(product_type, "Hi bud")
+
+print(product_type)
